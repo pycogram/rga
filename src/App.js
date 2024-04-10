@@ -22,29 +22,29 @@ function App() {
   return (
     <Router>
       <div className="App">
-        < MyNavBar RGA_logo = {RGA_logo}/>
-            <div className="AllPage">
-              <Switch>
-                <Route exact path="/">
-                  < MyHome RGA_logo = {RGA_logo} Tw = {Tw} Tb = {Tb} Li = {Li} Git = {Git} Bk = {Bk} Md = {Md}/>
-                </Route>
-                <Route exact path="/Overview">
-                  < MyOverView/>
-                </Route>
-                <Route exact path="/Tokenomic">
-                  < MyTokenomic/>
-                </Route>
-                <Route exact path="/Allocation">
-                  < MyAllocation/>
-                </Route>
-                <Route exact path="/Roadmap">
-                  < MyRoadMap/>
-                </Route>
-                <Route exact path="/Findus">
-                  < MyFindUs RGA_logo = {RGA_logo} DT = {DT} DS = {DS} DV = {DV}  CG = {CG} Tw = {Tw} Tb = {Tb} Li = {Li} Git = {Git} Bk = {Bk} Md = {Md} />
-                </Route>
-                </Switch>
-            </div>
+          < MyNavBar RGA_logo = {RGA_logo}/>
+          <div className="AllPage">
+            <Switch>
+              <Route exact path="/">
+                < MyHome RGA_logo = {RGA_logo} Tw = {Tw} Tb = {Tb} Li = {Li} Git = {Git} Bk = {Bk} Md = {Md}/>
+              </Route>
+              <Route exact path="/Overview">
+                < MyOverView/>
+              </Route>
+              <Route exact path="/Tokenomic">
+                < MyTokenomic/>
+              </Route>
+              <Route exact path="/Allocation">
+                < MyAllocation/>
+              </Route>
+              <Route exact path="/Roadmap">
+                < MyRoadMap/>
+              </Route>
+              <Route exact path="/Findus">
+                < MyFindUs RGA_logo = {RGA_logo} DT = {DT} DS = {DS} DV = {DV}  CG = {CG} Tw = {Tw} Tb = {Tb} Li = {Li} Git = {Git} Bk = {Bk} Md = {Md} />
+              </Route>
+            </Switch>
+          </div>
     </div>
     </Router>
   );

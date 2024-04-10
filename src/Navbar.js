@@ -1,5 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 let MyNavBar = ( {RGA_logo} ) => {
+    let [ actBTN, setActBTN ] = useState("");
+    let menuBTN = () => {
+        console.log("It works");
+        setActBTN();
+    }
     return(
         <header>
             <div className="NBBox">
@@ -15,6 +21,11 @@ let MyNavBar = ( {RGA_logo} ) => {
                     <div className="NBBtn">
                         <button>Buy $RGA</button>
                         <button>Chart</button>
+                    </div>
+                    <div onClick={() => menuBTN()} className="MenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
             </div>
         </header>
