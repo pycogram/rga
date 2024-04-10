@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 let MyNavBar = ( {RGA_logo} ) => {
-    let [ actBTN, setActBTN ] = useState("");
+
     let menuBTN = () => {
         console.log("It works");
-        setActBTN();
     }
     return(
         <header>

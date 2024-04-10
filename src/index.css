@@ -197,6 +197,7 @@ header .NBBox{
   display: flex;
   gap: 2px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .SCContainer span img{
   border: 1px solid transparent;
@@ -225,6 +226,10 @@ header .NBBox{
 }
 .Pt1 h2{
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 0 0.5rem;
 }
 .homePage .Pt2{
   display: flex;
@@ -237,6 +242,7 @@ header .NBBox{
   height: 500px;
   border-radius: 20px;
   transition: var(--tran-04);
+  padding: 0 0.5rem;
 }
 .Pt2 img:hover{
   transform: scale(0.98);
@@ -428,6 +434,9 @@ footer p{
     width: 300px;
     height: 300px;
   }
+  .SCContainer span img{
+    width: 38px;
+  }
   .AllocImg img{
     margin-top: 40px;
     width: 85%;
@@ -469,6 +478,8 @@ footer p{
     background-size: cover;
     border-right: 1px solid red;
     justify-content: center;
+    display: none;
+    pointer-events: none;
   }
   .NBOption li{
     text-align: center;
@@ -485,5 +496,23 @@ footer p{
     width: 38px;
     margin: 6px 0;
     border-radius: 25px;
+  }
+  .TokenPage .TPH4{
+    padding-left: 1rem;
+    text-wrap: wrap;
+  }
+}
+@media screen and (max-width: 530px) {
+  h1{
+    font-size: 35px;
+  }
+  .OVPH1 span{
+    width: 40px;
+  }
+  .overviewPage .OVH34{
+    padding: 0 1rem;
+  }
+  .TokenPage .TPH4{
+    padding-left: 0.5rem;
   }
 }
