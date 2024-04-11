@@ -484,8 +484,8 @@ footer p{
     justify-content: center;
     display: none;
     pointer-events: none;
-    /* display: block;
-    pointer-events: all; */
+    display: block;
+    pointer-events: all;
   }
   .NBOption li{
     text-align: center;
