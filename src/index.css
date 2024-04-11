@@ -38,6 +38,7 @@
   line-height: 40px;
   color: var(--bar-color-light);
   font-weight: 600;
+  box-sizing: border-box;
 }
 a{
   text-decoration: none;
@@ -54,6 +55,7 @@ img, span, button{
 }
 h1{
   font-size: 45px;
+  padding: 0 2rem;
 }h2{
   font-size: 35px;
 }h3{
@@ -459,8 +461,10 @@ footer p{
 }
 
 @media screen and (max-width: 825px){
-  h3{
-    font-size: 25px;
+  h1{
+    font-size: 40px;
+    text-wrap: wrap;
+    padding: 0 0.5rem;
   }
   .NBBox .NBOption{
     display: block;
@@ -480,20 +484,22 @@ footer p{
     justify-content: center;
     display: none;
     pointer-events: none;
+    /* display: block;
+    pointer-events: all; */
   }
   .NBOption li{
     text-align: center;
     height: fit-content;
     margin: 0.5rem 4rem;
   }
-  .NBBox .MenuBtn{
+  .NBBox #MenuBtn{
     display: block;
     pointer-events: auto;
   }
-  .MenuBtn span{
+  #MenuBtn span{
     background: var(--bar-color-light);
-    height: 5px;
-    width: 38px;
+    height: 4px;
+    width: 34px;
     margin: 6px 0;
     border-radius: 25px;
   }
@@ -505,6 +511,14 @@ footer p{
 @media screen and (max-width: 530px) {
   h1{
     font-size: 35px;
+    text-wrap: wrap;
+    padding: 0 0.1rem;
+  }
+  body{
+    background-size: 100% 200%;
+  }
+  .NBBox .NBBtn :nth-child(2){
+    display: none;
   }
   .OVPH1 span{
     width: 40px;
@@ -513,6 +527,16 @@ footer p{
     padding: 0 1rem;
   }
   .TokenPage .TPH4{
+    padding-left: 6rem;
+    margin-top: 40px;
+    overflow: hidden;
+    text-wrap: wrap;
+  }
+  .TokenPage .TPH4{
     padding-left: 0.5rem;
+  }
+  .AllocImg img{
+    width: 95%;
+    height: auto;
   }
 }

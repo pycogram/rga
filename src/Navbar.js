@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 let MyNavBar = ( {RGA_logo} ) => {
-
-    let menuBTN = () => {
-        console.log("It works");
-    }
     return(
         <header>
             <div className="NBBox">
@@ -21,7 +17,7 @@ let MyNavBar = ( {RGA_logo} ) => {
                         <button>Buy $RGA</button>
                         <button>Chart</button>
                     </div>
-                    <div onClick={() => menuBTN()} className="MenuBtn">
+                    <div id="MenuBtn">
                         <span></span>
                         <span></span>
                         <span></span>
