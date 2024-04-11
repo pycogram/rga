@@ -467,7 +467,6 @@ footer p{
     padding: 0 0.5rem;
   }
   .NBBox .NBOption{
-    display: block;
     list-style: none;
     gap: 0px;
     height: 88vh;
@@ -482,26 +481,49 @@ footer p{
     background-size: cover;
     border-right: 1px solid red;
     justify-content: center;
-    display: none;
-    pointer-events: none;
-    display: block;
-    pointer-events: all;
+    transition: ease-out 0.5s;
   }
   .NBOption li{
     text-align: center;
     height: fit-content;
     margin: 0.5rem 4rem;
   }
+  .NBBox .clicked{
+    display: block;
+    pointer-events: all;
+    transition: var(--tran-04);
+    transition: ease-out 0.5s;
+  }
+  .NBBox .unclicked{
+    display: none;
+    pointer-events: none;
+    transition: var(--tran-04);
+  }
   .NBBox #MenuBtn{
     display: block;
     pointer-events: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
-  #MenuBtn span{
+  #MenuBtn .burgarBar{
     background: var(--bar-color-light);
     height: 4px;
     width: 34px;
     margin: 6px 0;
     border-radius: 25px;
+  }
+  #MenuBtn .active:nth-child(1){
+    transform: rotate(40deg) translate(0.30em, 0.5em);
+    transition: ease-out 0.5s;
+  }
+  #MenuBtn .active:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+  }
+  #MenuBtn .active:nth-child(3){
+    transform: rotate(140deg) translate(-0.3em, 0.55em);
+    transition: ease-out 0.5s;
   }
   .TokenPage .TPH4{
     padding-left: 1rem;
