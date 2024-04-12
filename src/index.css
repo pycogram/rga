@@ -536,6 +536,13 @@ footer p{
     text-wrap: wrap;
     padding: 0 0.1rem;
   }
+  i{
+    text-align: start;
+    padding-left: 5px;
+  }
+  .TPH4 i{
+    font-size: 20px;
+  }
   body{
     background-size: 100% 200%;
   }
