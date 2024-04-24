@@ -28,19 +28,19 @@ function App() {
               <Route exact path="/">
                 < MyHome RGA_logo = {RGA_logo} Tw = {Tw} Tb = {Tb} Li = {Li} Git = {Git} Bk = {Bk} Md = {Md}/>
               </Route>
-              <Route exact path="/Overview">
+              <Route path="/Overview">
                 < MyOverView/>
               </Route>
-              <Route exact path="/Tokenomic">
+              <Route path="/Tokenomic">
                 < MyTokenomic/>
               </Route>
-              <Route exact path="/Allocation">
+              <Route path="/Allocation">
                 < MyAllocation/>
               </Route>
-              <Route exact path="/Roadmap">
+              <Route path="/Roadmap">
                 < MyRoadMap/>
               </Route>
-              <Route exact path="/Findus">
+              <Route path="/Findus">
                 < MyFindUs RGA_logo = {RGA_logo} DT = {DT} DS = {DS} DV = {DV}  CG = {CG} Tw = {Tw} Tb = {Tb} Li = {Li} Git = {Git} Bk = {Bk} Md = {Md} />
               </Route>
             </Switch>

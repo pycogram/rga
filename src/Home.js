@@ -12,8 +12,8 @@ let MyHome =  ( {RGA_logo, Tw, Tb, Li, Git, Bk, Md} ) => {
                 <span><img className="logo2" src={RGA_logo} alt="RGA Logo"></img></span>
                 <h2>Motto: <i>We are tired of scams</i></h2>
                 <div className="SCContainer">
-                    <span><a href="https://t.me/RuggedGA" target="_blank"><img src={Tw} alt="telegram logo"></img></a></span>
-                    <span><a href="https://twitter.com/RuggedGAonSol" target="_blank"><img src={Tb} alt="twitter logo"></img></a></span>
+                    <span><a href="" target="_blank"><img src={Tw} alt="telegram logo"></img></a></span>
+                    <span><a href="" target="_blank"><img src={Tb} alt="twitter logo"></img></a></span>
                     <span><a href=""><img src={Li} alt="linkedIn logo"></img></a></span>
                     <span><a href=""><img src={Git} alt="github logo"></img></a></span>
                     <span><a href=""><img src={Bk} alt="book logo"></img></a></span>
